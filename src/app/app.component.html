@@ -15,3 +15,24 @@
   (deactivate)="onDeactivate($event)"
 >
 </ngx-charts-line-chart>
+
+<ngx-charts-line-chart
+  [view]="view"
+  [scheme]="colorScheme"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxis]="xAxis"
+  [yAxis]="yAxis"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  [timeline]="timeline"
+  [results]="multi"
+  (select)="onSelect($event)"
+  (activate)="onActivate($event)"
+  (deactivate)="onDeactivate($event)"
+>
+  <ng-template #tooltipTemplate let-model="model">
+    <h1>example tooltip template</h1>
+    <h2>tooltip content</h2>
+  </ng-template>
+</ngx-charts-line-chart>
