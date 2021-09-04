@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
-import { multi } from '@mock/index';
-import { Line, SelectedEventArgs, ActivateEventArgs } from '@model/';
+import { multi } from '@mock';
+import { Line, SelectedEventArgs, ActivateEventArgs } from '@model';
 import { Color } from '@swimlane/ngx-charts';
 
 @Component({

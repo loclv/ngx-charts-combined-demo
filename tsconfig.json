@@ -22,9 +22,9 @@
     "lib": ["es2018", "dom"],
     "paths": {
       "@env": ["environments/environment"],
-      "@services/*": ["./app/data/service/*"],
-      "@mock/*": ["./app/data/service/mock/*"],
-      "@model/*": ["./app/data/model"]
+      "@services": ["./app/data/service"],
+      "@mock": ["./app/data/service/mock"],
+      "@model": ["./app/data/model"]
     }
   },
   "angularCompilerOptions": {
