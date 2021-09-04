@@ -30,7 +30,10 @@
           }
         ],
         "no-console": 1,
-        "no-alert": 2
+        "no-alert": 2,
+        "no-useless-concat": 2,
+        "prefer-template": 2,
+        "template-curly-spacing": 2
       }
     },
     {
