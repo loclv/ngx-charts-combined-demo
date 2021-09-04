@@ -36,14 +36,14 @@ export class AppComponent {
   } as Color;
 
   onSelect(data: SelectedEventArgs) {
-    console.log('Item clicked', JSON.parse(JSON.stringify(data)));
+    console.log('Item clicked', data);
   }
 
   onActivate(data: ActivateEventArgs) {
-    console.log('Activate', JSON.parse(JSON.stringify(data)));
+    console.log('Activate', data);
   }
 
   onDeactivate(data: ActivateEventArgs) {
-    console.log('Deactivate', JSON.parse(JSON.stringify(data)));
+    console.log('Deactivate', data);
   }
 }
