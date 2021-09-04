@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { multi } from '@mock/index';
-import { Line } from '@model/';
+import { Line, SelectedEventArgs, ActivateEventArgs } from '@model/';
 import { Color } from '@swimlane/ngx-charts';
 
 @Component({
@@ -35,15 +35,15 @@ export class AppComponent {
     domain: ['#5AA454', '#E44D25', '#CFC0BB', '#7aa3e5', '#a8385d', '#aae3f5'],
   } as Color;
 
-  onSelect(data: Line[]) {
+  onSelect(data: SelectedEventArgs) {
     console.log('Item clicked', JSON.parse(JSON.stringify(data)));
   }
 
-  onActivate(data: Line[]) {
+  onActivate(data: ActivateEventArgs) {
     console.log('Activate', JSON.parse(JSON.stringify(data)));
   }
 
-  onDeactivate(data: Line[]) {
+  onDeactivate(data: ActivateEventArgs) {
     console.log('Deactivate', JSON.parse(JSON.stringify(data)));
   }
 }
